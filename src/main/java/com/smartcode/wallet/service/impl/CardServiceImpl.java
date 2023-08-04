@@ -43,8 +43,10 @@ public class CardServiceImpl implements CardService {
     }
 
     @Override
+    @Transactional
     public void deleteByCardId(Integer cardId) {
-        CardEntity cardEntity = cardRepository.findById(cardId).orElseThrow(() -> new ResourceNotFoundException(Message.CARD_NOT_FOUND));
+        CardEntity cardEntity = cardRepository.findById(cardId).orElseThrow(
+                () -> new ResourceNotFoundException(Message.CARD_NOT_FOUND));
         cardRepository.delete(cardEntity);
     }
 
