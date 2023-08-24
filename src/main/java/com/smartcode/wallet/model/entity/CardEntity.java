@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @Entity
-@Table(name = "cards")
+@Table(name = "card")
 public class CardEntity extends BaseEntity{
 
     @Column(nullable = false)
