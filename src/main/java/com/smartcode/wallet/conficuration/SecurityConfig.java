@@ -1,4 +1,4 @@
-package com.smartcode.wallet.controller;
+package com.smartcode.wallet.conficuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
